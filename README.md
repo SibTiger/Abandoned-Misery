@@ -1,2 +1,2 @@
 # Abandoned Misery
-A GZDoom Deathmatch map project
+A GZDoom Deathmatch single map project
