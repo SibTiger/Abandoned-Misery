@@ -1,0 +1,88 @@
+////////////////////////////
+// Animations Definitions //
+////////////////////////////
+
+
+// ==============================
+//       Texture Animations
+// ==============================
+
+
+
+// Texture Base: nb_recol
+// -----------------
+    TEXTURE TX1_0CC
+        PIC TX1_0CC RAND 15 35
+        PIC TX1_0CD RAND 15 35
+
+
+
+// Texture Base: retres
+// -----------------
+    TEXTURE TX1_0DK
+        PIC TX1_0DK TICS 6
+        PIC TX1_0DL TICS 6
+        PIC TX1_0DM TICS 6
+        PIC TX1_0DN TICS 6
+
+// --
+
+    TEXTURE TX1_0DM
+        PIC TX1_0DM TICS 6
+        PIC TX1_0DN TICS 6
+        PIC TX1_0DK TICS 6
+        PIC TX1_0DL TICS 6
+
+// --
+
+    TEXTURE TX1_0DP
+        PIC TX1_0DP TICS 6
+        PIC TX1_0DQ TICS 6
+        PIC TX1_0DR TICS 6
+        PIC TX1_0DO TICS 6
+
+// --
+
+    TEXTURE TX1_0DO
+        PIC TX1_0DO TICS 6
+        PIC TX1_0DP TICS 6
+        PIC TX1_0DQ TICS 6
+        PIC TX1_0DR TICS 6
+
+
+
+
+// ==============================
+//              Warp
+// ==============================
+
+
+// Texture Base: 2mbrown
+// -----------------
+WARP FLAT TX2_004
+// --
+WARP2 FLAT TX3_005
+
+
+
+// Texture Base: decontex
+// -----------------
+WARP2 FLAT TX3_006
+// --
+WARP2 FLAT TX3_007
+
+
+
+
+// ==============================
+//      Wall Camera Textures
+// ==============================
+CAMERATEXTURE WALLCAM0 512 512 FIT 128 128
+CAMERATEXTURE WALLCAM1 512 512 FIT 128 128
+
+// ----
+// Because some maps use teleporters that do not easily fit with the 128x128 dimensions, below is specialized CameraTextures
+// Abandoned Misery
+CAMERATEXTURE FITCAM00 512 512 FIT 181 128
+CAMERATEXTURE FITCAM01 512 512 FIT 181 128
+// --

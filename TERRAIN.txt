@@ -1,0 +1,333 @@
+// ********************************************************************************
+//                         DEFINITIONS AND INITIALIZATIONS
+// ================================================================================
+
+
+// --------------------
+// Red Blood Splash
+// --------------------
+
+SPLASH Blood
+{
+    SmallClass          NJBloodBase
+    SmallClip           10
+    SmallSound          world/sludgegloopsmall
+
+    BaseClass           NJBloodBase
+    ChunkClass          NJBloodChunk
+    ChunkXVelShift      6
+    ChunkYVelShift      6
+    ChunkZVelShift      6
+    ChunkBaseZVel       2
+    Sound               world/sludgegloop
+    NoAlert
+}
+
+
+
+// --------------------
+// Lava Splash
+// --------------------
+
+
+SPLASH Lava
+{
+    SmallClass          NJLavaBase
+    SmallClip           12
+    SmallSound          world/lavasizzlesmall
+
+    BaseClass           NJLavaBase
+    ChunkClass          NJLavaSmoke
+    ChunkXVelShift      -1
+    ChunkYVelShift      -1
+    ChunkZVelShift      7
+    ChunkBaseZVel       1
+    Sound               world/lavasizzle
+    NoAlert
+}
+
+
+
+// --------------------
+// Lava Smoke Only Splash
+// --------------------
+
+
+SPLASH LavaSmoke
+{
+    SmallClass          NJLavaSmokeOnly
+    SmallClip           12
+    SmallSound          world/lavsiz2
+
+    BaseClass           NJLavaSmokeOnly
+    ChunkClass          NJLavaSmokeOnly
+    ChunkXVelShift      -1
+    ChunkYVelShift      -1
+    ChunkZVelShift      7
+    ChunkBaseZVel       1
+    Sound               world/lavsiz2
+    NoAlert
+}
+
+
+
+// --------------------
+// Nukage Green and Smokey
+// --------------------
+
+
+SPLASH Nuke
+{
+    SmallClass          NJNukageBase
+    SmallClip           6
+    SmallSound          world/lavasizzlesmall
+
+    BaseClass           NJNukageBase
+    ChunkClass          NJNukageSmoke
+    ChunkXVelShift      -1
+    ChunkYVelShift      -1
+    ChunkZVelShift      7
+    ChunkBaseZVel       1
+    Sound               world/lavasizzle
+    NoAlert
+}
+
+
+
+// --------------------
+// Slime Brown Splash
+// --------------------
+
+
+SPLASH SlimeBrown
+{
+    SmallClass          NJSlimeBrownBase
+    SmallClip           6
+    SmallSound          world/sludgegloopsmall
+
+    BaseClass           NJSlimeBrownBase
+    ChunkClass          NJSlimeBrownChunk
+    ChunkXVelShift      6
+    ChunkYVelShift      6
+    ChunkZVelShift      6
+    ChunkBaseZVel       2
+    Sound               world/sludgegloop
+    NoAlert
+}
+
+
+
+// --------------------
+// Sludge Greeny-Brown Splash
+// --------------------
+
+
+SPLASH SludgeGreenBrown
+{
+    SmallClass          NJSludgeBase
+    SmallClip           8
+    SmallSound          world/sludgegloopsmall
+
+    BaseClass           NJSludgeBase
+    ChunkClass          NJSludgeChunk
+    ChunkXVelShift      5
+    ChunkYVelShift      5
+    ChunkZVelShift      5
+    ChunkBaseZVel       2
+    Sound               world/sludgegloop
+    NoAlert
+}
+
+
+
+// --------------------
+// Water Splash
+// --------------------
+
+
+SPLASH Water
+{
+    SmallClass          NJWaterSplashBase
+    SmallClip           12
+    SmallSound          world/watersplashsmall
+
+    BaseClass           NJWaterSplashBase
+    ChunkClass          NJWaterSplashChunk
+    ChunkXVelShift      8
+    ChunkYVelShift      8
+    ChunkZVelShift      8
+    ChunkBaseZVel       2
+    Sound               world/watersplash
+    NoAlert
+}
+
+
+
+
+// ********************************************************************************
+//                               TERRAIN ASSIGNMENTS
+// ================================================================================
+
+
+// --------------------
+// Dull Red Blood
+// --------------------
+TERRAIN Blood
+{
+    Splash              Blood
+    FootClip            10
+    Liquid
+}
+
+
+
+// --------------------
+// Smokey Lava
+// --------------------
+TERRAIN Lava
+{
+    Splash              Lava
+    FootClip            10
+    Liquid
+}
+
+
+
+// --------------------
+// Just Smoke
+// --------------------
+TERRAIN LavaSmoke
+{
+    Splash              LavaSmoke
+    FootClip            0
+    Liquid
+}
+
+
+
+// --------------------
+// Bright Green and Smoke
+// --------------------
+TERRAIN Nuke
+{
+    Splash              Nuke
+    FootClip            10
+    Liquid
+}
+
+
+
+// --------------------
+// Brown and Gloopy
+// --------------------
+TERRAIN SlimeBrown
+{
+    Splash              SlimeBrown
+    FootClip            10
+    Liquid
+}
+
+
+
+// --------------------
+// Greeny Brown and Gloopy
+// --------------------
+TERRAIN SludgeGreenBrown
+{
+    Splash              SludgeGreenBrown
+    FootClip            10
+    Liquid
+}
+
+
+
+// --------------------
+// Normal Water
+// --------------------
+TERRAIN Water
+{
+    Splash              Water
+    FootClip            10
+    Liquid
+}
+
+
+
+
+// ********************************************************************************
+//                               TEXTURE ASSIGNMENTS
+// ================================================================================
+
+
+// --------------------
+// Blood
+// --------------------
+    floor BLOOD1 Blood
+    floor BLOOD2 Blood
+    floor BLOOD3 Blood
+    // --
+    floor TX2_004 Blood
+
+
+
+// --------------------
+// Water
+// --------------------
+    floor FWATER1 Water
+    floor FWATER2 Water
+    floor FWATER3 Water
+    floor FWATER4 Water
+    // --
+    floor TX3_007 Water
+
+
+
+// --------------------
+// Lava
+// --------------------
+    floor LAVA1 Lava
+    floor LAVA2 Lava
+    floor LAVA3 Lava
+    floor LAVA4 Lava
+    // --
+    floor TX3_006 Lava
+
+
+
+// --------------------
+// Nuke
+// --------------------
+    floor NUKAGE1 Nuke
+    floor NUKAGE2 Nuke
+    floor NUKAGE3 Nuke
+    // --
+
+
+
+// --------------------
+// Lava Smoke
+// --------------------
+    floor RROCK01 LavaSmoke
+    floor RROCK02 LavaSmoke
+    floor RROCK05 LavaSmoke
+    floor RROCK06 LavaSmoke
+    floor RROCK07 LavaSmoke
+    floor RROCK08 LavaSmoke
+    floor SLIME09 LavaSmoke
+    floor SLIME10 LavaSmoke
+    floor SLIME11 LavaSmoke
+    floor SLIME12 LavaSmoke
+
+
+
+// --------------------
+// Slime Brown
+// --------------------
+    floor SLIME01 SlimeBrown
+    floor SLIME02 SlimeBrown
+    floor SLIME03 SlimeBrown
+    floor SLIME04 SlimeBrown
+    floor SLIME05 SlimeBrown
+    floor SLIME06 SlimeBrown
+    floor SLIME07 SlimeBrown
+    floor SLIME08 SlimeBrown

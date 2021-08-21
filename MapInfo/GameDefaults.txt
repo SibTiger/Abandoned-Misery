@@ -1,0 +1,15 @@
+GameDefaults
+{
+    UsePlayerStartZ //If the PlayerStart is on a 3D Object, the player will now spawn ontop of it (depending on Z-Height specified)
+    SpawnWithWeaponRaised
+    SmoothLighting
+    FallingDamage
+    //AllowRespawn
+    AllowJump
+    AllowCrouch
+    AllowFreelook
+    CheckSwitchRange
+    Grinding_PolyObj
+    SkyStretch //Enforce Sky stretching regardless of users settings
+    LightMode = 0 //Standard Lighting - OpenGL
+}

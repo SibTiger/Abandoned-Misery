@@ -1,0 +1,18 @@
+MAP MAP01 "Abandoned Misery"
+{
+    LevelNum = 01
+    Next = "MAP01"
+    Sky1 = "TX0_0DZ", 0.1
+    Music = "D_DEAD"
+}
+
+
+
+// This map, same as MAP01, but is modified for performance instead of quality.
+MAP MAP02 "Abandoned Misery [Lite]"
+{
+    LevelNum = 02
+    Next = "MAP02"
+    Sky1 = "TX0_0DZ", 0.1
+    Music = "D_DEAD"
+}
